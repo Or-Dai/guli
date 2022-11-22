@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>guli_parent</artifactId>
+        <groupId>com.lyf</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <artifactId>api_gateway</artifactId>
+
+
+    <dependencies>
+
+
+        <dependency>
+            <groupId>com.lyf</groupId>
+            <artifactId>common_utils</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+
+        <!--gson-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+
+        <!--服务注册——alibaba-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!-- web应用 -->
+
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba.cloud/spring-cloud-alibaba-sentinel-gateway -->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.cloud</groupId>-->
+<!--            <artifactId>spring-cloud-alibaba-sentinel-gateway</artifactId>-->
+<!--            <version>2.1.0.RELEASE</version>-->
+<!--        </dependency>-->
+
+<!--                <dependency>-->
+<!--                    <groupId>com.alibaba.cloud</groupId>-->
+<!--                    <artifactId>spring-cloud-alibaba-sentinel-gateway</artifactId>-->
+<!--                    <version>2.2.0.RELEASE</version>-->
+<!--                </dependency>-->
+<!--                <dependency>-->
+<!--                    <groupId>com.alibaba.csp</groupId>-->
+<!--                    <artifactId>sentinel-transport-simple-http</artifactId>-->
+<!--                    <version>1.7.2</version>-->
+<!--                </dependency>-->
+<!--        &lt;!&ndash; https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway &ndash;&gt;-->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <version>2.1.4.RELEASE</version>
+        </dependency>
+
+
+
+
+
+
+        <!--服务调用——feign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>2.0.2.RELEASE</version>
+        </dependency>
+
+
+
+    </dependencies>
+</project>
