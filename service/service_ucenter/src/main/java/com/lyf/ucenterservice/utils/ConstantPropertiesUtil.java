@@ -14,13 +14,14 @@ import org.springframework.stereotype.Component;
 //@PropertySource("classpath:application.properties")
 public class ConstantPropertiesUtil  implements InitializingBean {
 
-    @Value("${wx.open.app_id}")
+    // 隐藏腾讯云秘钥:wx.open.app_id
+    @Value("${app_id}")
     private String appId;
 
-    @Value("${wx.open.app_secret}")
+    @Value("${app_secret}")
     private String appSecret;
 
-    @Value("${wx.open.redirect_url}")
+    @Value("${redirect_url}")
     private String redirectUrl;
 
     public static String WX_OPEN_APP_ID;
