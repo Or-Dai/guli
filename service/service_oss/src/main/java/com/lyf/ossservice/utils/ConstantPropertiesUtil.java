@@ -16,19 +16,20 @@ public class ConstantPropertiesUtil   implements InitializingBean {
 
 
     // 读取配置文件内容
-    @Value("${aliyun.oss.file.endpoint}")
+    // 隐藏endpoint
+    @Value("${endpoint}")
     private String endpoint;
 
 
 
-    @Value("${aliyun.oss.file.keyid}")
+    // @Value("${keyid}")
     private String keyId;
 
-    @Value("${aliyun.oss.file.keysecret}")
+    // @Value("$keysecret}")
     private String keySecret;
 
 
-    @Value("${aliyun.oss.file.bucketname}")
+    // @Value("${bucketname}")
     private String bucketName;
 
     //定义公开静态常量
