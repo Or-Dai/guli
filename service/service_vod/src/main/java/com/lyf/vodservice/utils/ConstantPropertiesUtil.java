@@ -14,10 +14,13 @@ import org.springframework.stereotype.Component;
 //@PropertySource("classpath:application.properties")
 public class ConstantPropertiesUtil implements InitializingBean {
 
-    @Value("${aliyun.vod.file.keyid}")
+    
+    # 配置阿里云秘钥
+    @Value("${keyid}")
     private String keyId;
 
-    @Value("${aliyun.vod.file.keysecret}")
+    # 配置阿里云秘钥
+    @Value("${keysecret}")
     private String keySecret;
 
     public static String ACCESS_KEY_ID;
